@@ -57,6 +57,7 @@ int main(void)
 		{
 			max_grid_size = prop.maxGridSize[2];
 		}
+		// grid size give threads number in grid
 		max_thread_blocks = max_grid_size / max_threads_per_blok; // prop.maxGridSize[0] / prop.maxThreadsDim[0] for this operation used x dimension
 		printf (" Maximum number of thread blocks for x  = %d \n", max_thread_blocks);
 	}
